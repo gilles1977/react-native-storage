@@ -30,8 +30,7 @@
     "clean": "rm -rf lib/",
     "build": "yarn clean && rollup -c && cp src/storage.d.ts lib/",
     "prepare": "yarn build",
-    "test": "jest",
-    "postinstall": "opencollective-postinstall"
+    "test": "jest"
   },
   "jest": {
     "verbose": true,
@@ -50,13 +49,5 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^4.2.3",
     "rollup-plugin-terser": "^4.0.4"
-  },
-  "dependencies": {
-    "opencollective-postinstall": "^2.0.2",
-    "opencollective": "^1.0.3"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/react-native-storage"
   }
 }
